@@ -18,6 +18,7 @@ public class Semaforo {
 
             try{
                 
+                
                 System.out.println();
                 System.out.println("---------------" + Thread.currentThread().getName() + " in attesa ai box --------------------");
                 System.out.println();
@@ -30,13 +31,12 @@ public class Semaforo {
 
             }
         }
-
-        valore = 0;
+        valore--;
     }
 
     public synchronized void v(){
 
-        valore = 1;
+        valore++;
         notify();
     }
 }

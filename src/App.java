@@ -2,7 +2,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         
         Box b = new Box();
-        Semaforo s = new Semaforo(1);
+        Semaforo s = new Semaforo(2);
         Macchina m1 = new Macchina(1, "Leclerc", "Ferrari", b, s);
         Macchina m2 = new Macchina(2, "Sainz", "Ferrari", b, s);
         Macchina m3 = new Macchina(3, "Perez", "Redbull", b, s);
